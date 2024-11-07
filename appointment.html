@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="shortcut icon" href="/Assets/Dr-Tlale-Logo1.png" type="image/png">
+    <link rel="stylesheet" href="/css/appointment.css">
+    <title>Appointment</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/html/index.html"><img src="/Assets/Dr-Tlale-Logo1.png" alt="dr tlale logo"></a> 
+        </div>
+
+        <ul>
+            <li><a href="/html/index.html">Home</a></li>
+            <li><a href="/html/services.html">services</a></li>
+        </ul>
+
+        <span class="sidebar-toggle">
+            <a href="#" id="sidebarToggle"><img class="sidebar-image" src="/Assets/Burger.png" alt=""></a>
+        </span>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="/html/index.html">Home</a></li>
+            <li><a href="/html/services.html">Services</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="information">
+            <h1>Book Your Appointment</h1>
+            <h1>More Information</h1>
+            
+            <span class="more-information">
+                <span>
+                    <p class="icon"><img class="icnon" src="/Assets/location.png" alt="">
+                    <p class="icon"><img src="/Assets/mail.png" alt=""></p>
+                    <p class="icon"><img src="/Assets/phone.png" alt=""></p>
+                </span>
+                <span>
+                    <p>Stand 268 N, Bluegumbosch, Phuthaditjhaba, Free State</p>
+                    <p>mtlale@yahoo.co.uk</p>
+                    <p>+27 58 303 0787</p>
+                </span>
+            </span>
+        </section>
+
+        <section class="appointment">
+            <form action="" method="POST" class="appointment-form">
+                <!-- Full Name Input -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            
+                <!-- Email Input -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+                <!-- Phone Number Input -->
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="012 3456 7890">
+            
+                <label>Payment Method</label>
+                <!-- Payment Method Selection -->
+                <div class="payment-method">
+                    <div class="payment-option">
+                        <input type="radio" id="cash" name="payment-method" value="cash"
+                            onclick="showPaymentDetails();" required>
+                        <label for="cash">Cash</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="medical-aid" name="payment-method" value="medical-aid"
+                            onclick="showPaymentDetails();">
+                        <label for="medical-aid">Medical Aid</label>
+                    </div>
+                </div>
+            
+                <!-- Conditional Cash Payment Message -->
+                <div id="cash-info" class="conditional-info" style="display: none;">
+                    <p>Children and Seniors: R400</p>
+                    <p>Adults: R450</p>
+                </div>
+            
+                <!-- Conditional Medical Aid Input -->
+                <div id="medical-aid-info" class="conditional-info" style="display: none;">
+                    <label for="medical-aid-name">Medical Aid Name</label>
+                    <input type="text" id="medical-aid-name" name="medical-aid-name" placeholder="Medical Aid Name">
+                </div>
+            
+                <!-- Date and Time Selection -->
+                <label for="appointment-date">Select Date</label>
+                <input type="text" id="appointment-date" name="appointment-date" required placeholder="Select Date">
+                
+                <label for="appointment-time">Time</label>
+                <select id="appointment-time" name="appointment-time" required>
+                    <option value="">Select a Time</option>
+                </select>
+                <!-- Submit Button -->
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <img src="/Assets/Dr-Tlale-Logo1.png" alt="">
+        <p>@2024 Dr T. L Tlale</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="/javascript/app.js"></script>  
+</body>
+</html>

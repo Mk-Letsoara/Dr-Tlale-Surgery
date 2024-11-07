@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 100px;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 1rem 0.2rem gray;
+}
+
+.logo img{
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 12vw;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul a{
+    font-weight: 500;
+    color: #000;
+    margin-right: 4rem;
+    text-decoration: none;
+}
+
+ul a:hover{
+    border-bottom: 0.2rem solid;
+}
+
+.sidebar{
+    display: none;
+}
+
+.sidebar img{
+    width: 2vw;
+}
+
+/* Sidebar styles */
+.sidebar {
+    gap: 0;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1.5rem;
+    top: 4rem;
+    right: 0; /* Move sidebar to the right */
+    width: 40vw;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2); /* Shadow towards the left */
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar li{
+    padding-top: 1rem;
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Slide in */
+}
+
+main{
+    display: flex;
+    padding: 2rem 4rem;
+    gap: 6rem;
+    height: auto;
+}
+
+section{
+    height: auto;
+    min-height: 70vh;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 40vw;
+    background-color: #efefef;
+
+}
+
+section h1{
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.2rem;
+    width: 35vw;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(249, 0, 0);
+}
+
+section P{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem ;
+    background-color: #03305f;
+    height: auto;
+}
+
+footer img{
+    width: 10vw;
+}
+
+footer p{
+    color: #fff;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        padding: 1rem 2rem;
+        height: 5rem;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 20vw;
+        margin-top: 2rem;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .sidebar{
+        display: block;
+    }
+
+    .sidebar-toggle img{
+        width: 4vw;
+        margin-top: 1rem;
+    }
+
+    main{
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    section{
+        height: auto;
+        min-height: 40vh;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        width: 50vw;
+        background-color: #efefef;
+    }
+
+    section h1{
+        margin: 0 auto;
+        text-align: center;
+        width: 40vw;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        background-color: rgb(249, 0, 0);
+    }
+    
+    footer{
+        margin-top: auto;
+        padding: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        height: 25vh;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+
+    footer img{
+        width: 20vw;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 1.5rem;
+        height: 5vh;
+        align-items: center;
+    }
+
+    .logo img{
+        margin-top: 1.5rem;
+        width: 25vw;
+    }
+
+    .sidebar{
+        display: block;
+    }
+
+    .sidebar-toggle img{
+        width: 6vw;
+        margin-top: 1rem;
+    }
+
+    main{
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    section{
+        height: auto;
+        min-height: 40vh;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        width: 85vw;
+        background-color: #efefef;
+    }
+
+    section h1{
+        margin: 0 auto;
+        text-align: center;
+        width: 70vw;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        background-color: rgb(249, 0, 0);
+    }
+    
+    footer{
+        padding: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        height: 15vh;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+
+    footer img{
+        width: 20vw;
+    }
+}
