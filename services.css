@@ -135,7 +135,7 @@ footer p{
 }
 
 /* Tablet View */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header {
         flex-direction: row;
         padding: 1rem 2rem;
@@ -162,6 +162,8 @@ footer p{
     }
 
     main{
+        min-height: 70vh;
+        max-height: 100%;
         padding: 2rem;
         gap: 1rem;
     }
