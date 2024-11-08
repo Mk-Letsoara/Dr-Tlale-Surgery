@@ -66,15 +66,20 @@ ul a:hover{
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 1.5rem;
-    top: 4rem;
+    padding-top: 3rem;
+    /* padding: 1.5rem; */
+    top: 0;
     right: 0; /* Move sidebar to the right */
-    width: 40vw;
+    width: 45vw;
     height: 100%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-toggle{
+    z-index: 1100;
 }
 
 .sidebar.open {

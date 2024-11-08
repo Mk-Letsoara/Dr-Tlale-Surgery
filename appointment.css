@@ -60,25 +60,27 @@ ul a:hover {
     width: 2vw;
 }
 
-/* Sidebar styles */
 .sidebar {
     gap: 0;
     position: fixed;
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 1.5rem;
-    top: 4rem;
+    padding-top: 3rem;
+    /* padding: 1.5rem; */
+    top: 0;
     right: 0; /* Move sidebar to the right */
-    width: 40vw;
+    width: 45vw;
     height: 100%;
-    background-color: #fff;
-    box-shadow: 10px 10px 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
 }
 
+.sidebar-toggle{
+    z-index: 1100;
+}
 .sidebar.open {
     transform: translateX(0);
 }
