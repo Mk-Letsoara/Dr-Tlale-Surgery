@@ -255,8 +255,12 @@ footer p{
         display: none;
     }
 
-    .sidebar{
-        display: block;
+    .sidebar-toggle {
+    display: block;
+    }
+
+    .sidebar-toggle a{
+    color: #000;
     }
 
     main{
@@ -342,9 +346,12 @@ footer p{
         width: 25vw;
     }
 
-    .sidebar-toggle img{
-        width: 6vw;
-        margin-top: 1rem;
+    .sidebar-toggle {
+    display: block;
+    }
+
+    .sidebar-toggle a{
+    color: #000;
     }
 
     main{
