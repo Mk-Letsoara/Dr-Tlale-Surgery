@@ -255,6 +255,10 @@ footer p {
         margin-top: 1rem;
     }
 
+    .sidebar{
+        top: 5rem;
+    }
+
     .hero {
         padding: 1rem 1rem;
         flex-direction: column;
@@ -278,6 +282,7 @@ footer p {
     }
 
     .text-buttons p {
+        margin: auto 0;
         width: 100%;
         font-size: 2rem;
     }
@@ -410,7 +415,9 @@ footer p {
     .sidebar-toggle{
         display: block;
     }
+
     .hero {
+        padding: 1rem 1rem;
         width: 100%;
         height: auto;
         flex-direction: column;

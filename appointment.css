@@ -85,7 +85,7 @@ ul a:hover {
 
 main {
     height: auto;
-    background-color: #fff;
+    background-color: #FFF6F6;
     display: flex;
     padding: 1rem 4rem;
     gap: 5rem;
@@ -282,13 +282,13 @@ footer p{
         display: block;
     }
 
-    .sidebar{
-        top: 4rem
-    }
-
     .sidebar-toggle img{
         width: 4vw;
         margin-top: 1rem;
+    }
+
+    .sidebar{
+        top: 5rem;
     }
 
     main{
@@ -381,7 +381,7 @@ footer p{
 
     main{
         flex-direction: column;
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.1rem;
         gap: 0rem;
         margin-bottom: 1rem;
     }
@@ -430,6 +430,7 @@ footer p{
     }
     
     .appointment {
+        margin-right: 1rem;
         margin-top: 2rem;
         width: 85vw;  /* Increased width of the container */
     }
