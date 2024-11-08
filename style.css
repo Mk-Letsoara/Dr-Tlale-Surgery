@@ -21,6 +21,12 @@ header {
     width: 12vw;
 }
 
+.logo img::focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
 ul {
     display: flex;
     list-style: none;
