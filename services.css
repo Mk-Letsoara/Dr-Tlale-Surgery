@@ -125,6 +125,10 @@ footer p{
         margin-top: 2rem;
     }
 
+    .sidebar-toggle{
+        display: block;
+    }
+
     ul {
         display: none;
     }
@@ -185,8 +189,11 @@ footer p{
         margin-top: 1.5rem;
         width: 25vw;
     }
-
-  
+    
+    .sidebar-toggle{
+        display: block;
+    }
+    
     main{
         flex-direction: column;
         padding: 2rem;
