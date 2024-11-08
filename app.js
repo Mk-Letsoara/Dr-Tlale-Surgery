@@ -68,10 +68,3 @@ function showPaymentDetails() {
         medicalAidInfo.style.display = "block";
     }
 }
-
-document.getElementById("sidebarToggle").addEventListener("click", function (event) {
-    event.preventDefault();
-    console.log("Sidebar toggle clicked"); // Check if the click is being captured
-    const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("open");
-});
