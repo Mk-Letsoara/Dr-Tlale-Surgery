@@ -21,9 +21,9 @@ header {
     width: 12vw;
 }
 
-.logo img:focus,
 a:focus {
     outline: none;
+    border: none;
     box-shadow: none;
 }
 
