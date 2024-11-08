@@ -21,8 +21,8 @@ header {
     width: 12vw;
 }
 
-.logo img::focus:not(:focus-visible),
-a:focus:not(:focus-visible) {
+.logo img:focus,
+a:focus {
     outline: none;
     box-shadow: none;
 }
