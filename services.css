@@ -125,10 +125,15 @@ footer p{
         margin-top: 2rem;
     }
 
-    .sidebar-toggle{
-        display: block;
+   .sidebar-toggle{
+    display: none;
     }
 
+    .sidebar-toggle a{
+    cursor: pointer;
+    color: #000;
+    }
+    
     ul {
         display: none;
     }
@@ -191,7 +196,12 @@ footer p{
     }
     
     .sidebar-toggle{
-        display: block;
+    display: none;
+    }
+
+.sidebar-toggle a{
+    cursor: pointer;
+    color: #000;
     }
     
     main{
