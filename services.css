@@ -126,7 +126,7 @@ footer p{
     }
 
    .sidebar-toggle{
-    display: none;
+    display: block;
     }
 
     .sidebar-toggle a{
@@ -196,7 +196,7 @@ footer p{
     }
     
     .sidebar-toggle{
-    display: none;
+    display: block;
     }
 
 .sidebar-toggle a{
