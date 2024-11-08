@@ -282,6 +282,10 @@ footer p{
         display: block;
     }
 
+    .sidebar{
+        top: 4rem
+    }
+
     .sidebar-toggle img{
         width: 4vw;
         margin-top: 1rem;
