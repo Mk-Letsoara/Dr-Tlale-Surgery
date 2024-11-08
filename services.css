@@ -39,11 +39,11 @@ ul a:hover{
     border-bottom: 0.2rem solid;
 }
 
-.sidebar{
+.sidebar-toggle{
     display: none;
 }
 
-.sidebar img{
+.sidebar-toggle img{
     width: 2vw;
 }
 
@@ -60,7 +60,6 @@ ul a:hover{
     width: 40vw;
     height: 100%;
     background-color: #fff;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2); /* Shadow towards the left */
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
@@ -155,10 +154,10 @@ footer p{
     .sidebar{
         display: block;
     }
-
+/* 
     .sidebar{
         top: 5rem;
-    }
+    } */
 
     .sidebar-toggle img{
         width: 4vw;

@@ -53,12 +53,11 @@ ul a:hover {
     text-align: center;
     justify-content: center;
     padding: 1.5rem;
-    top: 4rem;
+    top: 3rem;
     right: 0; /* Move sidebar to the right */
     width: 40vw;
     height: 100%;
-    background-color: #fff;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2); /* Shadow towards the left */
+    background-color: rgb(255, 255, 255);
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
@@ -233,7 +232,7 @@ footer p {
     header {
         flex-direction: row;
         padding: 1rem 2rem;
-        height: 5rem;
+        height: 6vh;
         align-items: center;
     }
 
@@ -255,9 +254,9 @@ footer p {
         margin-top: 1rem;
     }
 
-    .sidebar{
+    /* .sidebar{
         top: 5rem;
-    }
+    } */
 
     .hero {
         padding: 1rem 1rem;
@@ -398,7 +397,7 @@ footer p {
         display: flex;
         flex-direction: row;
         padding: 2rem 1.5rem;
-        height: 5vh;
+        height: 8vh;
         align-items: center;
     }
 

@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 1rem 0.2rem rgb(104, 104, 104);
+    border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .logo img {
@@ -60,7 +60,7 @@ ul a:hover {
     width: 40vw;
     height: 100%;
     background-color: #fff;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2); /* Shadow towards the left */
+    box-shadow: 10px 10px 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
@@ -365,7 +365,7 @@ footer p{
         display: flex;
         flex-direction: row;
         padding: 2rem 1.5rem;
-        height: 5vh;
+        height: 10vh;
         align-items: center;
     }
 
