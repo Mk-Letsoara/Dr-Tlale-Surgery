@@ -52,7 +52,7 @@ ul a:hover {
     border-bottom: 0.2rem solid;
 }
 
-.sidebar {
+.sidebar-toggle {
     display: none;
 }
 
