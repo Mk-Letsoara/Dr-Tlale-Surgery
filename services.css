@@ -22,6 +22,11 @@ a:focus {
     box-shadow: none;
 }
 
+img:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
 
 .logo img{
     text-align: center;
